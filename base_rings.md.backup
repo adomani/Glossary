@@ -33,9 +33,8 @@ A notational convention is to write _families_ and _structure morphisms to the g
 
 
 
-| \begin{array}{c} X \cr \downarrow \cr Y \end{array} | ![ima](2020_11_03_small_lavagna.png)|
+| \( \begin{array}{c} X \cr \downarrow \cr Y \end{array} \) | ![ima](2020_11_03_small_lavagna.png)|
 |---|---|
-
 
 The morphism \\(X \to Y\\) need not satisfy any further property.  However, it is common that _families_ satisfy extra conditions, implicitly or explicitly.  Common assumptions are: smooth, proper, projective, flat, equi-dimensional, finite type, locally of finite type...
 
