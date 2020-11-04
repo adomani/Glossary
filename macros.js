@@ -14,3 +14,4 @@ MathJax.Hub.Config({
 });
 
 MathJax.Ajax.loadComplete("https://homepages.warwick.ac.uk/~maskal/glossary/macros.js");
+
