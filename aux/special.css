@@ -65,3 +65,9 @@ div.sticky {
   background-color: #f9e79f;
   border: 2px solid #f9e79f;
 } 
+
+/*  padding around the entries of a table */
+/* `th`, instead of `td`, since it is the header of the table  */
+th {
+  padding:10px 25px 10px 25px;
+}
