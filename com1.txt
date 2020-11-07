@@ -1,0 +1,17 @@
+#outputs one file with template.html and
+#first input: title
+#second input: content
+
+mak1()
+{
+sed 's/titolo/\"'"$1"'\"/g' template.html | sed -e '/w3-include-html/r '"$2"'.html' | grep -v w3-include-html | grep -v include.js
+}
+
+#####################################
+#applies mak1 to the lines in first input
+#first input: lines `title:filename[without.html]:outputname[without.html]`
+
+maktotal()
+{
+while IFS=: read ti inp oup; do mak1 "$ti" "$inp" > "$oup".html; chmod a+rx "$oup".html; done < $1
+}

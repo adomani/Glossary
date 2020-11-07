@@ -2,7 +2,9 @@
 
 <H3>Everything I always wanted to know about scheme but was afraid to ask</H3>
 
-In mathematical writing, the standard practice is to present results in a concise and precise manner.  For an **expert**, this is of course desirable.  The intended target is an audience of readers who knows the topic well, is aware of the difficulties and can see through the remote reasons why some definition requires some condition, where a lemma provides a desirable consequence, how a theorem improves on known results.  Also, a direct argument, going in as straight a line as possible from the hypotheses to the conclusions, simplifies the process of checking for correctness.
+In mathematical writing, the standard practice is to present results in a concise and precise manner.
+
+For an **expert**, this is of course desirable.  The intended target is an audience of readers who knows the topic well, is aware of the difficulties and can see through the remote reasons why some definition requires some condition, where a lemma provides a desirable consequence, how a theorem improves on known results.  Also, a direct argument, going in as straight a line as possible from the hypotheses to the conclusions, simplifies the process of checking for correctness.
 
 For a **beginner**, though, this approach can be hard to penetrate.  Beautiful ideas can be lost in a sea of technicalities, important differences may go unnoticed, immaterial conditions may unduly appear to play a fundamental role.
 
