@@ -8,10 +8,13 @@ sed 's/titolo/\"'"$1"'\"/g' template.html | sed -e '/w3-include-html/r '"$2"'.ht
 }
 
 #####################################
-#applies mak1 to the lines in first input
-#first input: lines `title:filename[without.html]:outputname[without.html]`
+# applies mak1 to the lines in first input
+# first input: file containing lines with pattern
+# `title:filename[without.html]:outputname[without.html]`
+# should be run in a folder where
+# output files will be created in html/
 
 maktotal()
 {
-while IFS=: read ti inp oup; do mak1 "$ti" "$inp" > "$oup".html; chmod a+rx "$oup".html; done < $1
+while IFS=: read ti inp oup; do mak1 "$ti" md/"$inp" > html/"$oup".html; chmod a+rx html/"$oup".html; done < $1
 }
