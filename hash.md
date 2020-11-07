@@ -1,0 +1,3 @@
+about=About Glossary of Schemes
+index=Glossary of Schemes
+base_rings=Base rings, base schemes, ground fields,...
