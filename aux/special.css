@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f9e79f;
   margin-top: 50px;
   margin-right: 1050px;
@@ -7,23 +7,20 @@ body{
   width: 1100px;
 }
 
-div
-{
+div {
   text-align: justify;
   background-color: #fcf3cf;
   padding: 35px;
 }
 
-h1
-{
-  background-color:  #48c9b0 ;
+h1 {
+  background-color: #48c9b0;
 }
-
 
 * {
   box-sizing: border-box;
 } 
-  
+
 /* Create two equal columns that floats next to each other */
 .column1 {
   float: left;
@@ -35,24 +32,23 @@ h1
   width: 20%; 
   padding: 10px;
 } 
-  
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 } 
-  
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column1 {
     width: 100%;
-  } 
+  }
   .column2 {
     width: 100%;
-  } 
-}  
-
+  }
+}
 
 div.sticky {
   position: -webkit-sticky;
@@ -63,7 +59,7 @@ div.sticky {
   padding: 5px;
   background-color: #f9e79f;
   border: 2px solid #f9e79f;
-} 
+}
 
 /*  padding around the entries of a table */
 /* `th`, instead of `td`, since it is the header of the table  */
