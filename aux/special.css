@@ -1,5 +1,4 @@
-body
-{
+body{
   background-color: #f9e79f;
   margin-top: 50px;
   margin-right: 1050px;
@@ -7,7 +6,7 @@ body
   margin-left: 100px;
   width: 1100px;
 }
-  
+
 div
 {
   text-align: justify;
