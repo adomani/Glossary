@@ -29,4 +29,4 @@ hold?
 
 The first condition says that we are looking for a sequence of integers providing solution to our equations.  The second condition is there to provide "coherence" among the solutions.  
 
-**Exercise.**  Show that there are
+**Exercise.**  Show that there are two
