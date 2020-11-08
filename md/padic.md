@@ -13,7 +13,7 @@ Let \\(a \in \N\\) be a natural number and fix a prime number \\(p\\).  For each
 Informally, a \\(p\\)-adic integer is a sequence of integers satisfying 1., but not necessarily 2.
 
 
-  If we look at the sequence of residues upon division of \\(a\\) by larger and larger powers of \\(p\\), 
+  If we look at the sequence of residues upon division of \\(a\\) by larger and larger powers of \\(p\\),
 
 
 Let's begin with an example.  Suppose that we want to solve the equation
@@ -29,4 +29,4 @@ hold?
 
 The first condition says that we are looking for a sequence of integers providing solution to our equations.  The second condition is there to provide "coherence" among the solutions.  
 
-**Exercise.**  Show that there are 
+**Exercise.**  Show that there are
