@@ -1,3 +1,6 @@
+/* titolo is the title of the HTML file */
+var titolo="Base rings"
+
 /* function to include an HTML file */
 function includeHTML () {
   let z, i, elmnt, file, xhttp
@@ -26,3 +29,4 @@ function includeHTML () {
     }
   }
 };
+
