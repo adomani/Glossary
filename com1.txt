@@ -4,15 +4,16 @@
 
 mak1()
 {
-sed 's/titolo/\"'"$1"'\"/g' template.html | sed -e '/w3-include-html/r '"$2"'.html' | grep -v w3-include-html | grep -v include.js
+sed 's/1titolo/\"'"$1"'\"/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e '/3titolo/r '"$2"'.html' | grep -v 3titolo
 }
 
-#####################################
-# applies mak1 to the lines in first input
-# first input: file containing lines with pattern
-# `title:filename[without.html]:outputname[without.html]`
-# should be run in a folder where
-# output files will be created in html/
+#############################################################
+#  applies mak1 to the lines in first input                 #
+#  first input: file containing lines with pattern          #
+#  `title:filename[without.html]:outputname[without.html]`  #
+#  should be run in a folder where                          #
+#  output files will be created in html/                    #
+#############################################################
 
 maktotal()
 {
