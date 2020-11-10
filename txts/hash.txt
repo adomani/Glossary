@@ -2,3 +2,4 @@ About Glossary of Schemes:about:about
 Glossary of Schemes:index:index
 Base rings, base schemes, ground fields,...:base_rings:base_rings
 Varieties vs Schemes:varieties_vs_schemes:varieties_vs_schemes
+Affine schemes:affine_schemes:affine_schemes

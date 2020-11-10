@@ -17,5 +17,5 @@ sed 's/1titolo/\"'"$1"'\"/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e 
 
 maktotal()
 {
-while IFS=: read ti inp oup; do mak1 "$ti" md/"$inp" > html/"$oup".html; chmod a+rx html/"$oup".html; done < $1
+while IFS=: read ti inp oup; do mak1 "$ti" htmlpieces/"$inp" > html/"$oup".html; chmod a+rx html/"$oup".html; done < $1
 }
