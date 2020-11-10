@@ -16,10 +16,6 @@ scheme \\(Y\\) is affine.  If \\(R\\) is a field, then \\(R\\) is also called a 
 
 A notational convention is to write _families_ and _structure morphisms to the ground field/ring_ vertically:
 
-|uno|due|
-|---|---|
-
-
 \\[
   \begin{array}{c}
   X \cr
@@ -27,19 +23,6 @@ A notational convention is to write _families_ and _structure morphisms to the g
   Y
   \end{array}
 \\]
-
-\( \begin{array}{c}
-  X \cr
-  \downarrow \cr
-  Y
-  \end{array} \)
-
-
-
-
-| \begin{array}{c} X \cr \downarrow \cr Y \end{array} | ![ima](2020_11_03_small_lavagna.png)|
-|---|---|
-
 
 The morphism \\(X \to Y\\) need not satisfy any further property.  However, it is common that _families_ satisfy extra
 conditions, implicitly or explicitly.  Common assumptions are: smooth, proper, projective, flat, equi-dimensional,

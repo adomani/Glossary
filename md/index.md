@@ -17,5 +17,5 @@
 1. Regular and smooth schemes
 1. Spreading out
 1. Undefined locus of a morphism/divisor
-1. [Varieties vs Schemes](varieties_vs_scheme.html)
+1. [Varieties vs Schemes](varieties_vs_schemes.html)
 1. Zero divisors
