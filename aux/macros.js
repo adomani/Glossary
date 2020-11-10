@@ -1,7 +1,10 @@
 MathJax.Hub.Config({
   TeX: {
     Macros: {
+      A: '{\\mathbb A}',
       C: '{\\mathbb C}',
+      N: '{\\mathbb N}',
+      P: '{\\mathbb P}',
       Q: '{\\mathbb Q}',
       Z: '{\\mathbb Z}',
       spec: '{\\operatorname{Spec}\\,}',
@@ -13,4 +16,4 @@ MathJax.Hub.Config({
   }
 })
 
-MathJax.Ajax.loadComplete('https://homepages.warwick.ac.uk/~maskal/glossary/macros.js')
+MathJax.Ajax.loadComplete('https://homepages.warwick.ac.uk/~maskal/Glossary/macros.js')

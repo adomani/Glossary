@@ -4,7 +4,6 @@
 ---|---|---
 
 
-1. [Varieties vs Schemes](varieties_vs_scheme.html)
 1. Affine schemes
 1. [Base rings, base schemes, ground fields](base_rings.html)
 1. Cohomology: sheaf, simplicial, Čech, étale...
@@ -18,4 +17,5 @@
 1. Regular and smooth schemes
 1. Spreading out
 1. Undefined locus of a morphism/divisor
+1. [Varieties vs Schemes](varieties_vs_scheme.html)
 1. Zero divisors

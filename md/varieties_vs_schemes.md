@@ -42,7 +42,6 @@ is a scheme that is not a variety.  Below are examples of schemes fitting all re
 
 3\. \\(\spec \Z\\) is not defined over a field.
 
-
 **1a. Nonreduced schemes.**
 For me, this is the most useful gain in going from varieties to schemes.  In some sense, non-reducedness often takes the form of "conservation of mass".  It also helps in making precise the idea of "counting with multiplicities".
 
