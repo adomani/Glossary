@@ -1,3 +1,4 @@
 add dates
 pictures
 schemes
+finite type?
