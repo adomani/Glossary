@@ -2,7 +2,7 @@
 #first input: title
 #second input: content
 
-mak1()
+mak1 ()
 {
 sed 's/1titolo/\"'"$1"'\"/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e '/3titolo/r '"$2"'.html' | grep -v 3titolo
 }
@@ -15,7 +15,7 @@ sed 's/1titolo/\"'"$1"'\"/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e 
 #  output files will be created in html/                    #
 #############################################################
 
-maktotal()
+maktotal ()
 {
 while IFS=: read ti inp oup; do mak1 "$ti" htmlpieces/"$inp" > html/"$oup".html; chmod a+rx html/"$oup".html; done < $1
 }
