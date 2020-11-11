@@ -6,6 +6,7 @@ MathJax.Hub.Config({
       N: '{\\mathbb N}',
       P: '{\\mathbb P}',
       Q: '{\\mathbb Q}',
+      R: '{\\mathbb R}',
       Z: '{\\mathbb Z}',
       spec: '{\\operatorname{Spec}\\,}',
       oh: '{\\frac{1}{2}}',

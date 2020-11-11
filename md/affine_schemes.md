@@ -1,9 +1,53 @@
-\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\N{{\mathbb{N}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \\)
+\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\R{{\mathbb{R}}} \def\N{{\mathbb{N}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \\)
 
 
 # Affine schemes
 
 Affine schemes are the building blocks of schemes, since any scheme admits an open cover by affine schemes.
+
+For me, the most important result about affine schemes is the equivalence
+
+\\[ \\left\\{\\begin{array}{c}\\textrm{category of} \\cr \\textrm{affine schemes}\\end{array} \\right\\} \longleftrightarrow \\left\\{ \\begin{array}{c}\\textrm{opposite category of} \\cr \\textrm{commutative rings with }1\\end{array}\\right\\}.\\]
+
+It took me a while to unwind the definition and longer to internalize it, but I found that it was definitely worth the effort!  Let me take some time explaining the great consequences of this equivalence.
+
+First, the left-hand side of the equivalence is what we are trying to understand and the right-hand side is something that is really familiar: this is good!  The "opposite" part may throw you away, but we begin by forgetting about it and pretending that it is not there: we will simply reverse all the arrows in the end!
+
+So, we are trying to understand the (opposite) category of commutative rings with 1: that's actually really easy!
+
+- The objects of the category are commutative rings with an identity -- so far, so good!
+- The morphisms between two such commutative rings are the ring homomorphisms.
+- Now reverse all the arrows and you have constructed the category of affine schemes!
+
+That's it!
+
+Where is the difficulty?  Where did \\(\spec\\), prime ideals, Zariski topology, regular functions,... all go?  Well, the next part is to obtain an intuition for affine schemes that is "independent" of commutative rings and is closer to topological spaces.  This allows to bring a geometric intuition to algebraic problems, justifying the name "algebraic geometry".
+
+Let's begin to convert the algebraic data encoded by a commutative ring with identity into geometric data.
+<!-- From now on, *ring* already stands for *commutative ring with identity*.-->
+
+First, to be really geometric, we construct a topological space out of a commutative ring with identity R.  The guiding intuition is that our ring is going to be the ring of continuous functions on 
+
+
+Let's begin.  The easiest is \\(\spec\\): this is a contravariant functor realizing the anti-equivalence above: we feed to \\(\spec\\) a commutative ring with identity and it returns an affine scheme.  
+
+
+The fact that first comes to my mind when thinking about affine schemes is
+
+
+
+This is analogous to the definition of a manifold: every point on a manifold has a neighbourhood that is diffeomorphic to \\(\R\^n\\), for some \\(n \in \N\\): these are the *charts*.
+
+
+
+In fact, a manifold comes with a notion of what are differentiable functions (usually encoded by an *atlas*) that are locally the differentiable functions on \\(\R\^n\\), pulled-back via the local charts.
+
+
+ and an affine scheme come with a notion 
+
+
+
+Initially, it might disconcerting to have 
 
 Intuitively, an
 affine scheme is a subset of \\(\A\^n\\) defined by the vanishing of a set of polynomials.  A little bit more formally,
