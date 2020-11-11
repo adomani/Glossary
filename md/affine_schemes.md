@@ -1,4 +1,4 @@
-\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\R{{\mathbb{R}}} \def\N{{\mathbb{N}}} \def\fm{{\mathfrak{m}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \def\zmod#1{\Z/#1\Z} \\)
+\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\R{{\mathbb{R}}} \def\N{{\mathbb{N}}} \def\fm{{\mathfrak{m}}}  \def\fp{{\mathfrak{p}}}  \def\fq{{\mathfrak{q}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \def\zmod#1{\Z/#1\Z} \\)
 
 
 # Affine schemes
@@ -42,7 +42,11 @@ Item 1 aims to provide a description of the points of \\(X\\) from algebraic pro
 
 An immediate consequence of the discussion above is that maximal ideals in a ring \\(R\\) appear like a good algebraic substitute for points of a topological space.  In what follows, we interchangeably talk about ideals in \\(R\\) and the ring homomorphism whose kernel is \\(I\\).
 
-A second consequence is that zero divisors are way too many to make prime ideals much different from maximal ideals... **if** we work with *all* the continuous functions on our topological space.  However, we are headed in the direction of studying polynomial rings and maybe rational functions, which are hardly general continuous functions!  For perspective, recall that a rational (or even meromorphic) function on \\(\C\\) whose zero set has an accumulation point is identically zero (see [Identity Theorem](https://en.wikipedia.org/wiki/Identity_theorem)).  Thus, in our context, it might make sense to allow also prime ideals, and not simply maximal ideals.  Let us see one advantage of allowing non-maximal, prime ideals.
+A second consequence is that zero-divisors are way too many to make prime ideals very different from maximal ideals... **if** we work with *all* the continuous functions on our topological space.  However, we are headed in the direction of studying polynomial rings and maybe rational functions, which are hardly general continuous functions!  For perspective, recall that a rational (or even meromorphic) function on \\(\C\\) whose zero set has an accumulation point is identically zero (see [Identity Theorem](https://en.wikipedia.org/wiki/Identity_theorem)).  Thus, in our context, it might make sense to allow also prime ideals, and not simply maximal ideals.  Indeed, allowing non-maximal, prime ideals helps with the definition of the Zariski topology.  [In the C^(*)-algebra setting, it is the topology on the C^(*)-algebra itself that takes care of this.]
+
+
+Thus, we define the set of points of the topological space underlying \\(\spec R\\) to be the set of prime ideals of \\(R\\).  The topology can be defined purely in terms of the poset of prime ideals, ordered by inclusion: an inclusion of prime ideals \\(\fp \subset \fq\\) means that the point \\(\fp\\) contains the point \\(fq\\) in its closure.
+
 
 Suppose that we want to identify a mystery ring \\(A\\).  We are told that there is a bijection between the maximal ideals of \\(A\\) and the prime numbers such that if the maximal ideal \\(\fm \subset A\\) corresponds to the prime number \\(p \in \N\\), then the quotient \\(A/\fm\\) is isomorphic to \\(\zmod{p}\\).  Can we reconstruct our ring \\(A\\)?
 
