@@ -4,7 +4,7 @@
 ---|---|---
 
 
-1. Affine schemes
+1. [Affine schemes](affine_schemes.html)
 1. [Base rings, base schemes, ground fields](base_rings.html)
 1. Cohomology: sheaf, simplicial, &#268;ech, &eacute;tale...
 1. Degenerations/specializations
