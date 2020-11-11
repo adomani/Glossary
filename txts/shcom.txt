@@ -4,7 +4,7 @@
 
 mak1 ()
 {
-sed 's/1titolo/\"'"$1"'\"/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e '/3titolo/r '"$2"'.html' | grep -v 3titolo
+sed 's/1titolo/'"$1"'/1' scheletro.html | sed 's/2titolo/'"$1"'/1' | sed -e '/3titolo/r '"$2"'.html' | grep -v 3titolo
 }
 
 #############################################################
