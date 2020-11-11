@@ -8,6 +8,8 @@ MathJax.Hub.Config({
       Q: '{\\mathbb Q}',
       R: '{\\mathbb R}',
       Z: '{\\mathbb Z}',
+      fm: '{\\mathfrak m}',
+      zmod: ['{\\Z/ #1 \\Z}', 1],
       spec: '{\\operatorname{Spec}\\,}',
       oh: '{\\frac{1}{2}}',
       zoh: '{\\Z [\\oh]}',

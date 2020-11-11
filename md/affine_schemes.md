@@ -1,4 +1,4 @@
-\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\R{{\mathbb{R}}} \def\N{{\mathbb{N}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \\)
+\\( \def\A{{\mathbb{A}}} \def\C{{\mathbb{C}}} \def\Z{{\mathbb{Z}}} \def\Q{{\mathbb{Q}}} \def\R{{\mathbb{R}}} \def\N{{\mathbb{N}}} \def\fm{{\mathfrak{m}}} \def\spec{\operatorname{Spec}} \def\oh{\frac{1}{2}} \def\zoh{\Z[\oh]} \def\zmod#1{\Z/#1\Z} \\)
 
 
 # Affine schemes
@@ -9,7 +9,7 @@ For me, the most important result about affine schemes is the equivalence
 
 \\[ \\left\\{\\begin{array}{c}\\textrm{category of} \\cr \\textrm{affine schemes}\\end{array} \\right\\} \longleftrightarrow \\left\\{ \\begin{array}{c}\\textrm{opposite category of} \\cr \\textrm{commutative rings with }1\\end{array}\\right\\}.\\]
 
-It took me a while to unwind the definition and longer to internalize it, but I found that it was definitely worth the effort!  Let me take some time explaining the great consequences of this equivalence.
+It may take a while to unwind the definition and even longer to internalize it, but I definitely found that it was worth the effort!  Let me take some time explaining the great consequences of this equivalence.
 
 First, the left-hand side of the equivalence is what we are trying to understand and the right-hand side is something that is really familiar: this is good!  The "opposite" part may throw you away, but we begin by forgetting about it and pretending that it is not there: we will simply reverse all the arrows in the end!
 
@@ -21,7 +21,43 @@ So, we are trying to understand the (opposite) category of commutative rings wit
 
 That's it!
 
-Where is the difficulty?  Where did \\(\spec\\), prime ideals, Zariski topology, regular functions,... all go?  Well, the next part is to obtain an intuition for affine schemes that is "independent" of commutative rings and is closer to topological spaces.  This allows to bring a geometric intuition to algebraic problems, justifying the name "algebraic geometry".
+Where is the difficulty?  Where did \\(\spec\\), prime ideals, Zariski topology, regular functions,... all go?  Well, the next part is to obtain an intuition for affine schemes that is "independent" of commutative rings and is closer to topological spaces.
+
+So far, we used the equivalence above as a *definition*, whereas it is normally a *theorem*: we now roll our sleeves up and properly give a geometric definition of affine schemes.
+
+Given a commutative ring \\(R\\) with unit, we want to construct a topological space \\(\spec R\\) with the property that \\(R\\) is the ring of functions on \\(\spec R\\).  [We should really define a topological space **and** a sheaf of rings, but we focus first on the topological space.  After all, it is fairly common to abuse notation and view \\(\spec R\\) just as the underlying topological space.]
+
+You might have seen that the points of \\(\spec R\\) are the prime ideals of \\(R\\).  Suppose that we have a topological space \\(X\\) and the ring \\(C(X,\R)\\) of continuous functions on \\(X\\).  Recall that we are trying to read off information about \\(X\\) from \\(C(X,\R)\\) alone.  Each point \\(x \in X\\) determines an evaluation map
+
+\\[ \begin{array}{rcl} ev\_x \colon \; C(X,\R) & \longrightarrow & \R \cr f \hspace{10pt} & \longmapsto & f(x). \end{array} \\]
+
+The evaluation map \\(ev\_x\\) is a ring homomorphism and the codomain is a field.  Hence, the kernel of \\(ev\_x\\) is a maximal ideal.
+
+I invite you to think a bit about how much you can go the opposite way.
+
+1. Is it true that a maximal ideal in \\(C(X,\R)\\) necessarily arises as the kernel of the evaluation map at *some* point of \\(X\\)?  [This is a hard question, that I do not expect you to solve!  One of the fundamental results is the [Gelfand representation](https://en.wikipedia.org/wiki/Gelfand_representation) of a [commutative C^(*)-algebra](https://en.wikipedia.org/wiki/C*-algebra#Commutative_C*-algebras).]
+1. What are the zero-divisors in the ring of continuous functions on a topological space?  In particular, you might like to know whether, given two distinct points \\(x,y\\) on \\(X\\), there is a continuous function \\(f\_x \colon X \to \R\\) such that \\(f\_x(x) \neq 0\\) and \\(f\_x(y)=0\\).  [In this context, the [separation axioms](https://en.wikipedia.org/wiki/Separation_axiom) and [Urisohn's lemma](https://en.wikipedia.org/wiki/Urysohn%27s_lemma) become relevant.]
+
+Item 1 aims to provide a description of the points of \\(X\\) from algebraic properties of the ring of continuous functions on \\(X\\).  Item 2 aims to provide intuition about prime ideals: if \\(f,g \in C(X,\R)\\) are continuous functions and \\(fg=0\\) identically on \\(X\\), then for every prime ideal \\(I \subset C(X,\R)\\), at most one among \\(f\\) and \\(g\\) may be outside of \\(I\\).
+
+An immediate consequence of the discussion above is that maximal ideals in a ring \\(R\\) appear like a good algebraic substitute for points of a topological space.  In what follows, we interchangeably talk about ideals in \\(R\\) and the ring homomorphism whose kernel is \\(I\\).
+
+A second consequence is that zero divisors are way too many to make prime ideals much different from maximal ideals... **if** we work with *all* the continuous functions on our topological space.  However, we are headed in the direction of studying polynomial rings and maybe rational functions, which are hardly general continuous functions!  For perspective, recall that a rational (or even meromorphic) function on \\(\C\\) whose zero set has an accumulation point is identically zero (see [Identity Theorem](https://en.wikipedia.org/wiki/Identity_theorem)).  Thus, in our context, it might make sense to allow also prime ideals, and not simply maximal ideals.  Let us see one advantage of allowing non-maximal, prime ideals.
+
+Suppose that we want to identify a mystery ring \\(A\\).  We are told that there is a bijection between the maximal ideals of \\(A\\) and the prime numbers such that if the maximal ideal \\(\fm \subset A\\) corresponds to the prime number \\(p \in \N\\), then the quotient \\(A/\fm\\) is isomorphic to \\(\zmod{p}\\).  Can we reconstruct our ring \\(A\\)?
+
+
+ \\(\fm \subset A\\), there is a prime number , 
+
+
+  Let's work out a couple of examples to see why this makes sense.
+
+### Example
+
+The spectrum of a field \\(k\\).  We are looking for a topological space whose non-zero functions are all invertible.  
+
+
+This allows to bring a geometric intuition to algebraic problems, justifying the name "algebraic geometry".
 
 Let's begin to convert the algebraic data encoded by a commutative ring with identity into geometric data.
 <!-- From now on, *ring* already stands for *commutative ring with identity*.-->
