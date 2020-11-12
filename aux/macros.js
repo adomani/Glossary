@@ -3,6 +3,7 @@ MathJax.Hub.Config({
     Macros: {
       A: '{\\mathbb A}',
       C: '{\\mathbb C}',
+      F: '{\\mathbb F}',
       N: '{\\mathbb N}',
       P: '{\\mathbb P}',
       Q: '{\\mathbb Q}',
