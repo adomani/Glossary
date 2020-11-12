@@ -2,3 +2,4 @@ add dates
 pictures
 schemes
 finite type?
+consequences of being affine: commutative ring, *quasi-compact*, separated

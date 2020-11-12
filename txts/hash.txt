@@ -1,5 +1,7 @@
-About Glossary of Schemes:about:about
-Glossary of Schemes:index:index
-Base rings, base schemes, ground fields,...:base_rings:base_rings
-Varieties vs Schemes:varieties_vs_schemes:varieties_vs_schemes
-Affine schemes:affine_schemes:affine_schemes
+About Glossary of Schemes:about
+Glossary of Schemes:index
+Base rings, base schemes, ground fields,...:base_rings
+Varieties vs Schemes:varieties_vs_schemes
+Affine schemes:affine_schemes
+Empty scheme:empty_scheme
+Commutative rings without identity:without_id
