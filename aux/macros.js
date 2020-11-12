@@ -1,9 +1,8 @@
-MathJax.Hub.Config({
-  TeX: {
-    Macros: {
+window.MathJax = {
+  tex: {
+    macros: {
       A: '{\\mathbb A}',
       C: '{\\mathbb C}',
-      F: '{\\mathbb F}',
       N: '{\\mathbb N}',
       P: '{\\mathbb P}',
       Q: '{\\mathbb Q}',
@@ -16,10 +15,15 @@ MathJax.Hub.Config({
       spec: '{\\operatorname{Spec}\\,}',
       oh: '{\\frac{1}{2}}',
       zoh: '{\\Z [\\oh]}',
-      RR: '{\\bf R}',
-      bold: ['{\\bf #1}', 1]
-    }
-  }
-})
-
-MathJax.Ajax.loadComplete('https://homepages.warwick.ac.uk/~maskal/Glossary/macros.js')
+      RR: "{\\bf R}",
+      bold: ["{\\bf #1}", 1]
+    }  
+  }    
+};
+  
+(function () {
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+  script.async = true;
+  document.head.appendChild(script);
+})();
